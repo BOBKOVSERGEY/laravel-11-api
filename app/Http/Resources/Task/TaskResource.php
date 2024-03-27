@@ -20,7 +20,7 @@ class TaskResource extends JsonResource
             'name' => $this->name,
             'user' => $this->user,
             'status' => $this->status,
-            'created_at' => Carbon::parse($this->created_at)->format('d.m.Y')
+            'created_at' => Carbon::parse($this->created_at)->format('Y-m-d')
         ];
     }
 }
